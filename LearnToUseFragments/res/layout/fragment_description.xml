@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.example.learntousefragments.ItemImageView
+        android:id="@+id/itemDetailedIcon"
+        android:layout_width="160dip"
+        android:layout_height="160dip" />
+
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDetailLastDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/itemDetailedIcon"
+        android:layout_toRightOf="@+id/itemDetailedIcon"
+        android:text="name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvDetailLastDate"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignBottom="@+id/itemDetailedIcon"
+        android:layout_alignRight="@+id/tvDetailName"
+        android:layout_toRightOf="@+id/itemDetailedIcon"
+        android:text="lastDate"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvDetailFirstDate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvDetailName"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/itemDetailedIcon"
+        android:text="firstDate" />
+
+    <TextView
+        android:id="@+id/tvDetailID"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tvDetailName"
+        android:layout_alignLeft="@+id/tvDetailName"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="45dp"
+        android:text="id" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvDetailLastDate"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/checkAxisX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X Asix" />
+
+        <CheckBox
+            android:id="@+id/checkAxisY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y Asix" />
+
+        <CheckBox
+            android:id="@+id/checkAsixZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z Asix" />
+
+    </LinearLayout>
+
+</RelativeLayout>

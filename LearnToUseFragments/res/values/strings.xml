@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LearnToUse Fragments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_deleteAll">Delete All</string>
+    <string name="action_rename">Rename Session</string>
+    <string name="action_delete">Delete Session</string>
+    <string name="action_duplicate">Duplicate Session</string>
+    <string name="title_activity_description">DescriptionActivity</string>
+
+</resources>
